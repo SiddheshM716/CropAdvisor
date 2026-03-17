@@ -77,7 +77,7 @@ export default function WeatherScreen() {
         if (!weatherData || !weatherData.currentConditions) return;
         setAiLoading(true);
         try {
-            const GEMINI_KEY = 'AIzaSyAODjx2_w_T1xfvboZOnOife2WMPCyEMao';
+            const GEMINI_KEY = 'GEMINI-API-KEY';
             const url = `https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash:generateContent?key=${GEMINI_KEY}`;
 
             const prompt = `
